@@ -30,3 +30,7 @@ RUN \
   npm install -g bower && \
   npm install -g phantomjs && \
   gem install compass  --no-rdoc --no-ri
+
+ADD package.json /tmp/package.json
+
+RUN cd /tmp && npm install --silent
