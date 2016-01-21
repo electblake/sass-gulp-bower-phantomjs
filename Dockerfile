@@ -29,6 +29,7 @@ RUN \
   npm install -g gulp && \
   npm install -g bower && \
   npm install -g phantomjs && \
+  npm install -g karma@0.13.19 && \
   gem install compass  --no-rdoc --no-ri
 
 ADD package.json /tmp/package.json
